@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116907164-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-116907164-1');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8" />
+    <meta name="description" content="All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy." />
+    <meta property="og:title" content="All work and no play makes Jack a dull boy." />
+    <meta property="og:url" content="http://www.allworkandnoplaymakesjackadullboy.co.uk" />
+    <meta property="og:description" content="All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy." />
+    <meta property="og:image" content="http://allworkandnoplaymakesjackadullboy.co.uk/allworkandnoplaymakesjackadullboy.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Work and No Play Makes Jack a Dull Boy</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: hidden;
+            font-family: Courier New, Courier, monospace;
+            background-color: #D05427;
+        }
+
+        strong {
+            color: #333333;
+        }
+
+        div.background {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(data:image/png;base64,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);
+        }
+
+        div.outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        div.inner {
+            display: table-cell;
+            vertical-align: bottom;
+        }
+
+        div.placeholder {
+            margin-left: auto;
+            margin-right: auto;
+            width: 780px;
+        }
+
+        div.page {
+            margin-top: 1%;
+            margin-bottom: 1%;
+            padding: 0 12% 0 12%;
+            background-color: #FFFEEE;
+        }
+
+        a.page-footer, div.line {
+            white-space: nowrap;
+        }
+
+        div.page-footer {
+            display: block;
+            height: 1em;
+            padding-bottom: 2%;
+        }
+
+        div.footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        div.footer-inner {
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 6px;
+            padding-right: 6px;
+        }
+
+        div.sharing {
+            width: 53px;
+            font-size: 8px;
+            margin-left: auto;
+        }
+
+        .share-icon {
+            fill: #DDD;
+        }
+
+        @media only screen and (max-width: 920px) {
+
+            div.footer-inner {
+                width: 780px;
+                padding-bottom: 12px;
+                padding-right: 12px;
+            }
+
+            .share-icon {
+                fill: #CCC;
+            }
+        }
+
+        @media only screen and (max-width: 820px) {
+
+            div.background {
+                background-size: 8.8vw 12.7vw;
+            }
+
+            div.placeholder {
+                width: 95vw;
+            }
+
+            div.footer-inner {
+                width: 95vw;
+                padding-bottom: 1.4vw;
+                padding-right: 1.4vw;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            div.placeholder {
+                font-size: 2.5vw;
+            }
+
+            div.sharing {
+                width: 9.5vw;
+                font-size: 2.4vw;
+            }
+
+            .share-icon {
+                width: 4vw;
+                height: 4vw;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            div.sharing {
+                width: 10.5vw;
+            }
+
+            .share-icon {
+                width: 4.5vw;
+                height: 4.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="outer">
+        <div class="inner">
+            <div id="placeholder" class="placeholder"></div>
+            <div class="footer">
+                <div class="footer-inner">
+                    <div class="sharing">
+                        <a id="facebookButton" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.allworkandnoplaymakesjackadullboy.co.uk" title="Share on Facebook" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="share-icon"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg></a>
+                        <a id="twitterButton" href="https://twitter.com/share?url=http%3A%2F%2Fwww.allworkandnoplaymakesjackadullboy.co.uk&hashtags=AllWorkAndNoPlayMakesJackADullBoy" title="Share on Twitter" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="share-icon"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script language="javascript">
+
+        function BindShareButtonClick(button, socialNetwork, socialAction) {
+
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                var width = 650, height = 450;
+                window.open(button.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=' + width + ',height=' + height + ',top=' + (screen.height / 2 - height / 2) + ',left=' + (screen.width / 2 - width / 2));
+
+                ga('send', 'social', socialNetwork, socialAction, window.location.href);
+            });
+        }
+
+        var maxTypePause = 60, minTypePause = 5, lineBreakPause = 200;
+        var randomTypoFactor = 125, randomLineBreakFactor = 4;
+        var relativePageWidth = 850, relativePageHeight = 1100, pageMarginPercent = 12;
+        var sentence = 'All work and no play makes Jack a dull boy.';
+        var text = sentence;
+        var formatType = { SingleLineBreak: 1, DoubleLineBreak: 2, RandomLineBreak: 3, Paragraph: 4, LeftRightDiagonal: 5, RightLeftDiagonal: 6, ZigZag: 7 };
+        var format = formatType.DoubleLineBreak, usedFormats = [format], leftToRight = true;
+        var randomCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789?!;%&';
+        var placeholder = document.getElementById("placeholder");
+        var page = null, container = null, textContainer = null, pageFooter = null;
+        var characterCounter = 0;
+
+        function NewPage() {
+
+            if (placeholder.childElementCount > 6) {
+                placeholder.removeChild(placeholder.children[0]);
+            }
+
+            page = document.createElement('div');
+            page.className = 'page';
+
+            container = document.createElement('div');
+            page.appendChild(container);
+
+            placeholder.appendChild(page);
+
+            pageFooter = null;
+
+            setTimeout(AddPageHeader, lineBreakPause);
+        }
+
+        function AddPageHeader() {
+
+            var paddingTopPercent = (page.style.paddingTop == '' ? 0 : eval(page.style.paddingTop.slice(0, -1))) + 2;
+
+            page.style.paddingTop = paddingTopPercent + '%';
+
+            window.scrollTo(0, placeholder.scrollHeight);
+
+            if (paddingTopPercent < pageMarginPercent) {
+                setTimeout(AddPageHeader, lineBreakPause);
+            } else {
+                setTimeout(AddPageFooter, lineBreakPause);
+            }
+        }
+
+        function AddPageFooter() {
+
+            pageFooter = document.createElement('div');
+            pageFooter.className = 'page-footer';
+
+            page.appendChild(pageFooter);
+
+            window.scrollTo(0, placeholder.scrollHeight);
+
+            setTimeout(NewLine, lineBreakPause);
+        }
+
+        function NewLine() {
+
+            textContainer = document.createElement('div');
+
+            if (format == formatType.Paragraph) {
+                textContainer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+                var sentenceCount = RandomInteger(3, 8);
+                text = '';
+                for (var i = 0; i <= sentenceCount; i++) {
+                    text += sentence;
+                    if (i < sentenceCount) text += ' ';
+                }
+            } else {
+                textContainer.className = "line";
+                textContainer.innerHTML = '&nbsp;';
+                text = sentence;
+            }
+
+            container.appendChild(textContainer);
+
+            window.scrollTo(0, placeholder.scrollHeight);
+
+            setTimeout(AddText, lineBreakPause);
+        }
+
+        function TypeWriter() {
+
+            if (textContainer.innerHTML.slice(-6) == '&nbsp;') {
+                textContainer.innerHTML = textContainer.innerHTML.slice(0, -6);
+            }
+
+            if (format == formatType.LeftRightDiagonal || (format == formatType.ZigZag && leftToRight)) {
+                if (text.charAt(characterCounter) == ' ') {
+                    for (var i = 0; i < characterCounter; i++) {
+                        textContainer.innerHTML += '&nbsp;';
+                    }
+                }
+            }
+
+            if (format == formatType.RightLeftDiagonal || (format == formatType.ZigZag && !leftToRight)) {
+                if (characterCounter == 0 || text.charAt(characterCounter - 1) == ' ') {
+                    var nextSpaceIndex = text.indexOf(' ', characterCounter)
+                    if (nextSpaceIndex > 0) {
+                        for (var i = 0; i < text.length - nextSpaceIndex; i++) {
+                            textContainer.innerHTML += '&nbsp;';
+                        }
+                    }
+                }
+            }
+
+            textContainer.innerHTML += GetCharacter(text, characterCounter);
+
+            window.scrollTo(0, placeholder.scrollHeight);
+
+            characterCounter++;
+
+            if (text.charAt(characterCounter - 1) == '.') {
+
+                if (maxTypePause > 15) maxTypePause--;
+
+                if (lineBreakPause > 50) lineBreakPause--;
+
+                if (randomTypoFactor > 15) randomTypoFactor--;
+            }
+
+            if (characterCounter == text.length) {
+                characterCounter = 0;
+                leftToRight = !leftToRight;
+                setTimeout(LineBreak, lineBreakPause);
+            } else if (format == formatType.Paragraph && text.charAt(characterCounter - 1) == '.' && PageIsFull()) {
+                characterCounter = 0;
+                setTimeout(LineBreak, lineBreakPause);
+            } else if ((format == formatType.LeftRightDiagonal || (format == formatType.ZigZag && leftToRight)) && text.charAt(characterCounter) == ' ') {
+                setTimeout(LineBreak, lineBreakPause);
+            } else if ((format == formatType.RightLeftDiagonal || (format == formatType.ZigZag && !leftToRight)) && text.charAt(characterCounter - 1) == ' ') {
+                setTimeout(LineBreak, lineBreakPause);
+            } else {
+                setTimeout(TypeWriter, RandomInteger(minTypePause, maxTypePause));
+            }
+        }
+
+        function LineBreak() {
+
+            if (!PageIsFull()) {
+
+                if (format == formatType.DoubleLineBreak ||
+                    format == formatType.Paragraph ||
+                    (format == formatType.RandomLineBreak && randomLineBreakFactor == RandomInteger(1, randomLineBreakFactor))) {
+
+                    container.innerHTML += '<br />';
+
+                    window.scrollTo(0, placeholder.scrollHeight);
+
+                    if (!PageIsFull()) {
+                        setTimeout(NewLine, lineBreakPause);
+                    } else {
+                        AddText();
+                    }
+                } else {
+                    NewLine();
+                }
+            } else {
+                AddText();
+            }
+        }
+
+        function AddText() {
+
+            if (PageIsFull()) {
+
+                format = GetNextFormat(format);
+
+                setTimeout(FillPageFooter, lineBreakPause);
+            }
+            else {
+                setTimeout(TypeWriter, lineBreakPause);
+            }
+        }
+
+        function FillPageFooter() {
+
+            var footerHeightPercent = GetFooterHeightPercent();
+
+            var paddingTopPercent = (pageFooter.style.paddingTop == '' ? 0 : eval(pageFooter.style.paddingTop.slice(0, -1)));
+
+            if (footerHeightPercent < pageMarginPercent) {
+
+                if (footerHeightPercent + 2 > pageMarginPercent) {
+
+                    while (footerHeightPercent < pageMarginPercent) {
+                        paddingTopPercent += (pageMarginPercent - footerHeightPercent);
+                        pageFooter.style.paddingTop = paddingTopPercent + '%';
+                        footerHeightPercent = GetFooterHeightPercent();
+                    }
+                }
+                else {
+                    paddingTopPercent += 2;
+                    pageFooter.style.paddingTop = paddingTopPercent + '%';
+                }
+            }
+
+            window.scrollTo(0, placeholder.scrollHeight);
+
+            if (footerHeightPercent < pageMarginPercent) {
+
+                setTimeout(FillPageFooter, lineBreakPause);
+            } else {
+
+                setTimeout(NewPage, lineBreakPause);
+            }
+        }
+
+        function PageIsFull() {
+
+            return (container.scrollHeight >= GetActualSize(relativePageHeight) - ((pageMarginPercent / 50) * page.clientWidth))
+        }
+
+        function GetCharacter(textings, index) {
+
+            var returnValue = textings.charAt(index);
+
+            if (randomTypoFactor == RandomInteger(1, randomTypoFactor)) {
+
+                var typoType = RandomInteger(1, 4);
+
+                switch (typoType) {
+
+                    case 1:
+                        if (returnValue == returnValue.toLowerCase()) {
+                            returnValue = returnValue.toUpperCase();
+                        } else {
+                            returnValue = returnValue.toLowerCase();
+                        }
+                        break;
+                    case 2:
+                        returnValue = '';
+                        break;
+                    case 3:
+                        returnValue += returnValue == ' ' ? '&nbsp;' : returnValue;
+                        break;
+                    case 4:
+                        var randomCharacter = randomCharacters.charAt(Math.floor((Math.random() * randomCharacters.length) + 1));
+                        if (returnValue == returnValue.toLowerCase()) {
+                            returnValue = randomCharacter.toLowerCase();
+                        } else {
+                            returnValue = randomCharacter.toUpperCase();
+                        }
+                        break;
+                }
+            }
+
+            if (randomTypoFactor == RandomInteger(1, randomTypoFactor)) {
+
+                returnValue = '<strong>' + returnValue + '</strong>';
+            }
+
+            return returnValue;
+        }
+
+        function GetNextFormat(currentFormat) {
+
+            var nextFormat = currentFormat;
+
+            var formats = [];
+            for (var o in formatType) {
+                formats.push(formatType[o]);
+            }
+
+            while (!FormatAllowed(currentFormat, nextFormat)) {
+
+                nextFormat = formats[RandomInteger(0, formats.length)];
+            }
+
+            if (usedFormats.length + 1 == formats.length) {
+                usedFormats = [];
+            } else {
+                usedFormats.push(nextFormat);
+            }
+            return nextFormat;
+        }
+
+        function FormatAllowed(currentFormat, nextFormat) {
+
+            if (nextFormat == currentFormat) {
+                return false;
+            } else {
+                for (i = 0; i < usedFormats.length; i++) {
+                    if (usedFormats[i] == nextFormat) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+
+        function GetFooterHeightPercent(){
+            return Math.round((pageFooter.clientHeight / GetActualSize(relativePageWidth)) * 10000) / 100;
+        }
+
+        function GetActualSize(relativeSize) {
+            return Math.round(relativeSize * (page.clientWidth / relativePageWidth));
+        }
+
+        function RandomInteger(minValue, maxValue) {
+            return minValue + Math.floor(Math.random() * maxValue);
+        }
+
+        (function () {
+
+            BindShareButtonClick(document.getElementById("facebookButton"), 'Facebook', 'Share');
+            BindShareButtonClick(document.getElementById("twitterButton"), 'Twitter', 'Tweet');
+            NewPage();
+
+        })();
+    </script>
+</body>
+</html>
